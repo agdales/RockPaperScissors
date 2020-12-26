@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>Python</ID>
-  <OriginalElement>#C:/Users/dalesa/OneDrive - Highgate School/2020-21/Year 13 - Comp Project/PyCharm/RockPaperScissors/game_objects.py</OriginalElement>
+  <OriginalElement />
   <nodes>
     <node x="-16.5" y="901.5">game_objects.ClInterface</node>
     <node x="1087.5" y="-15.5">game_objects.Player</node>
@@ -24,7 +24,7 @@
       <point x="0.0" y="175.5" />
     </edge>
   </edges>
-  <settings layout="Orthogonal" zoom="0.5480093676814989" x="511.5" y="385.99999999999994" />
+  <settings layout="Orthogonal" zoom="0.6480093676814989" x="-50.034188034188105" y="386.0" />
   <SelectedNodes>
     <node>game_objects.ClInterface</node>
   </SelectedNodes>
