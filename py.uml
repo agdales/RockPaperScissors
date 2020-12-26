@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#C:/Users/dalesa/OneDrive - Highgate School/2020-21/Year 13 - Comp Project/PyCharm/RockPaperScissors/game_objects.py</OriginalElement>
+  <nodes>
+    <node x="-16.5" y="901.5">game_objects.ClInterface</node>
+    <node x="1087.5" y="-15.5">game_objects.Player</node>
+    <node x="1039.5" y="437.0">game_objects.ComputerPlayer</node>
+    <node x="269.5" y="178.0">game_objects.Game</node>
+  </nodes>
+  <notes>
+    <note x="-3.0" y="-5.5">
+      <node>game_objects.Game</node>
+      <value>Universal Modelling Language (UML) diagrams are standard ways to represent OOP design\nThese Class Diagrams are created automatically in PyCharm\nRight-click at the top of the module and choose Create Diagram</value>
+      <edge>
+        <point x="0.0" y="-342.0" />
+        <point x="0.0" y="45.5" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="game_objects.ComputerPlayer" target="game_objects.Player">
+      <point x="0.0" y="-83.0" />
+      <point x="0.0" y="175.5" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal" zoom="0.5480093676814989" x="511.5" y="385.99999999999994" />
+  <SelectedNodes>
+    <node>game_objects.ClInterface</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+
