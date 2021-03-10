@@ -76,6 +76,7 @@ class Game:
                 self.round_winner = self.players[1]
             self.round_winner.win_round()
 
+    # Resets game objects ready for a new round
     def next_round(self):
         self.round_result = None
         self.round_winner = None
@@ -83,6 +84,7 @@ class Game:
             player.current_object = None
         self.current_round += 1
 
+    # Checks if game is finished
     def is_finished(self):
         return self.current_round >= self.max_rounds
 
@@ -122,7 +124,7 @@ class Game:
             win_msg = "Game is drawn"
         return win_msg
 
-
+# Command Line Interface - runs the game from the Command line
 class ClInterface:
     def __init__(self):
         self.game = Game()
