@@ -16,7 +16,7 @@ class TestGUI(tk.Frame):
         self.text_area.pack(padx=10, pady=(5, 10))
 
         self.bind('<Key>', self.press_key)
-        self.hello_button.focus()
+        # Put focus on the frame to allow key bind to work
         self.focus()
 
     def press_button(self):
