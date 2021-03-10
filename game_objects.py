@@ -1,6 +1,7 @@
 import random
 
 
+# The Player Class represents a player
 class Player:
     def __init__(self, name=None):
         if name:
@@ -28,6 +29,7 @@ class Player:
         self.score += 1
 
 
+# The ComputerPlayer Class is a subclass of Player
 class ComputerPlayer(Player):
     def choose_object(self, choice=None, objects=None):
         if objects is None:
@@ -88,6 +90,7 @@ class Game:
     def is_finished(self):
         return self.current_round >= self.max_rounds
 
+    # Resets the games setting current round to 0 and player scores to 0
     def reset(self):
         self.current_round = 0
         self.round_result = None
@@ -96,6 +99,7 @@ class Game:
             player.score = 0
             player.current_object = None
 
+    # returns a message reporting on what the players played and what the result of the round was
     def report_round(self):
         if self.round_result is None:
             report_msg = 'Round has not been played'
@@ -110,11 +114,13 @@ class Game:
                 report_msg += f'{self.round_winner.name} won this round'
         return report_msg
 
+    # Returns a string with the current scores
     def report_score(self):
         score_msg = f"After {self.current_round} rounds:\n"
         score_msg += "\n".join([f"{player.name} has scored {player.score}" for player in self.players])
         return score_msg
 
+    # Returns a message with the overall winner
     def report_winner(self):
         if self.players[0].score > self.players[1].score:
             win_msg = f"{self.players[0].name} is the winner"
@@ -123,6 +129,7 @@ class Game:
         else:
             win_msg = "Game is drawn"
         return win_msg
+
 
 # Command Line Interface - runs the game from the Command line
 class ClInterface:
