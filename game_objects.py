@@ -83,6 +83,7 @@ class Game:
         # round_winner is the player who has won the round
         self.round_winner = None
 
+    # Add a human player with their name
     def add_human_player(self, name=None):
         player = HumanPlayer(name)
         self.players.append(player)
