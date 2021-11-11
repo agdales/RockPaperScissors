@@ -30,12 +30,13 @@ class GameApp(tk.Tk):
         # Set up frames for each of the page classes
         pages = (GameOptionsGUI, GameGUI)
         for F in pages:
+            # Sets up each frame with the GameApp (self) as the controller
             frame = F(self)
             self.frames[F] = frame
 
         self.show_frame(GameOptionsGUI)
 
-    # Function to show the desired game class, which is a subclass of tk.Frame
+    # Method to show the desired game class, which is a subclass of tk.Frame
     def show_frame(self, current_frame):
         for frame in self.frames.values():
             frame.pack_forget()
@@ -107,6 +108,7 @@ class GameOptionsGUI(tk.Frame):
         self.controller.show_frame(GameGUI)
 
     def validate_entry(self, user_name):
+        # Validation routine, only allows the start_button to be pressed if the name entered obeys validation rules
         if (0 < len(user_name) < 13) and user_name.isalpha():
             self.start_button.config(state=tk.NORMAL)
             self.player.set_name(user_name)
